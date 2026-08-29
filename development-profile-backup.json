@@ -1,0 +1,285 @@
+{
+  "id": "profile-1787986692208",
+  "name": "开发配置",
+  "settings": {
+    "mode": "automatic",
+    "planningMode": "main-agent",
+    "plannerAlias": "",
+    "requirePlanConfirmation": true,
+    "subagentProvider": "spawn",
+    "maxDepth": 1,
+    "foregroundTimeoutMs": 120000,
+    "idleTimeoutMs": 60000,
+    "maxConcurrentSubagents": 3,
+    "enableBackground": true,
+    "showSelectionReason": true,
+    "customSkill": "",
+    "models": [
+      {
+        "alias": "google-antigravity-antigravity-gemini-3-7-flash",
+        "provider": "google-antigravity",
+        "model": "antigravity-gemini-3.7-flash",
+        "displayName": "Gemini 3.7 Flash",
+        "purpose": "适合快速响应的编程任务，如实时调试、代码重构、多步自动化操作。推理能力强，工具调用准确度高，适合对结果准确性要求较高的快速任务。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "alias": "google-antigravity-antigravity-gemini-3-6-flash",
+        "provider": "google-antigravity",
+        "model": "antigravity-gemini-3.6-flash",
+        "displayName": "Gemini 3.6 Flash",
+        "purpose": "适合日常编程开发任务，如写业务代码、单元测试、接口开发。响应速度快，成本适中，适合大多数常规开发场景。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "alias": "google-antigravity-antigravity-gemini-3-1-pro",
+        "provider": "google-antigravity",
+        "model": "antigravity-gemini-3.1-pro",
+        "displayName": "Gemini 3.1 Pro",
+        "purpose": "适合需要事先规划的复杂任务，如系统架构设计、处理复杂文档并生成交互式内容、制定完整的项目方案。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "high"
+        ]
+      },
+      {
+        "alias": "google-antigravity-antigravity-gemini-3-5-flash",
+        "provider": "google-antigravity",
+        "model": "antigravity-gemini-3.5-flash",
+        "displayName": "Gemini 3.5 Flash",
+        "purpose": "适合大批量、简单重复的任务，如代码补全、代码格式化、简单问答、批量自动化小任务。质量要求不高时优先使用，成本最低。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "alias": "antigravity-claude-opus-4-6-thinking",
+        "provider": "google-antigravity",
+        "model": "antigravity-claude-opus-4-6-thinking",
+        "displayName": "Claude Opus 4.6 Thinking",
+        "purpose": "适合最复杂的推理和规划任务，如大型系统架构设计、复杂数学建模、多步骤科研分析、需要层层递进思考的难题。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "high",
+        "reasoningEfforts": [
+          "high"
+        ]
+      },
+      {
+        "alias": "antigravity-claude-sonnet-4-6-thinking",
+        "provider": "google-antigravity",
+        "model": "antigravity-claude-sonnet-4-6-thinking",
+        "displayName": "Claude Sonnet 4.6 Thinking",
+        "purpose": "适合需要深度推理的编程和逻辑任务，如复杂算法实现、代码审查、架构选型分析、需要仔细思考的业务逻辑设计。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "high",
+        "reasoningEfforts": [
+          "high"
+        ]
+      },
+      {
+        "alias": "minimax-cn-minimax-m2-7",
+        "provider": "minimax-cn",
+        "model": "MiniMax-M2.7",
+        "displayName": "MiniMax-M2.7",
+        "purpose": "适合快速、范围明确的日常任务，如写工具函数、修小 Bug、优化 SQL、完成简单自动化脚本。响应快，稳定可靠，适合高频派活。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "alias": "minimax-cn-minimax-m2-7-highspeed",
+        "provider": "minimax-cn",
+        "model": "MiniMax-M2.7-highspeed",
+        "displayName": "MiniMax-M2.7-highspeed",
+        "purpose": "适合对延迟敏感的快速任务，如实时交互、需要快速反馈的编码任务。推理结果与 M2.7 一致，但响应速度更快。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "alias": "minimax-cn-minimax-m3",
+        "provider": "minimax-cn",
+        "model": "MiniMax-M3",
+        "displayName": "MiniMax-M3",
+        "purpose": "适合复杂编程任务、长文档分析（整本书、数百页报告）、视频内容理解、以及需要自主拆解步骤的智能体工作流。支持图片和视频输入，具备 1M 超长上下文。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "alias": "openai-codex-gpt-5-4",
+        "provider": "openai-codex",
+        "model": "gpt-5.4",
+        "displayName": "GPT-5.4",
+        "purpose": "适合专业性强的知识工作，如金融建模、法律合同分析、复杂数据表格处理。具备跨应用操作能力，能自动在 Excel、PPT 等软件间协作完成任务。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "alias": "openai-codex-gpt-5-4-mini",
+        "provider": "openai-codex",
+        "model": "gpt-5.4-mini",
+        "displayName": "GPT-5.4 mini",
+        "purpose": "适合对成本和速度有要求的轻量级任务，如日常图文处理、常规文档理解、轻量级编程辅助。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "alias": "openai-codex-gpt-5-5",
+        "provider": "openai-codex",
+        "model": "gpt-5.5",
+        "displayName": "GPT-5.5",
+        "purpose": "适合独立完成完整的复杂项目，如从零开发一个完整应用、做深度的行业调研报告、或独立完成科研分析。会自动规划步骤、查资料、写代码、测试，直到交付。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "alias": "openai-codex-gpt-5-6-luna",
+        "provider": "openai-codex",
+        "model": "gpt-5.6-luna",
+        "displayName": "GPT-5.6 Luna",
+        "purpose": "适合日常编程和图文混合任务，如写业务代码、修 Bug、根据设计图生成前端页面。能力均衡，适合通用开发场景，最省token",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "alias": "openai-codex-gpt-5-6-sol",
+        "provider": "openai-codex",
+        "model": "gpt-5.6-sol",
+        "displayName": "GPT-5.6 Sol",
+        "purpose": "适合对速度要求较高的编程和图文任务，如快速迭代开发、高频代码生成。响应速度快，适合需要快速反馈的开发场景，适合做大脑审核，做开发计划",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "alias": "openai-codex-gpt-5-6-terra",
+        "provider": "openai-codex",
+        "model": "gpt-5.6-terra",
+        "displayName": "GPT-5.6 Terra",
+        "purpose": "适合追求性价比的编程和图文任务，如大批量代码生成、常规业务开发。成本较低，适合预算有限或大批量处理场景。",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "maxTokens": 4096,
+        "reasoningEffort": "low",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      }
+    ]
+  }
+}

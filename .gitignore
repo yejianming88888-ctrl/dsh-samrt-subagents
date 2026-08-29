@@ -1,0 +1,9 @@
+node_modules/
+dist/
+lib/
+.vite/
+.cache/
+*.log
+.env
+.env.*
+!.env.example

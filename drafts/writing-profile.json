@@ -1,0 +1,46 @@
+{
+  "id": "writing-profile",
+  "name": "写作配置",
+  "purpose": "长文、润色、资料整理",
+  "settings": {
+    "foregroundTimeoutMs": 300000,
+    "idleTimeoutMs": 120000,
+    "maxConcurrentSubagents": 2,
+    "maxDepth": 1,
+    "enableBackground": false,
+    "showSelectionReason": true,
+    "customSkill": "",
+    "plannerAlias": "",
+    "subagentProvider": "spawn",
+    "models": [
+      {
+        "provider": "openai-codex",
+        "model": "gpt-5.6-luna",
+        "alias": "gpt-5.6-luna",
+        "displayName": "GPT-5.6 Luna",
+        "maxTokens": 4096,
+        "purpose": "长文润色与资料整理",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "reasoningEfforts": [],
+        "reasoningEffort": "low"
+      },
+      {
+        "provider": "openai-codex",
+        "model": "gpt-5.4-mini",
+        "alias": "gpt-5.4-mini",
+        "displayName": "GPT-5.4 mini",
+        "maxTokens": 4096,
+        "purpose": "校对与排版",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "reasoningEfforts": [],
+        "reasoningEffort": "low"
+      }
+    ]
+  }
+}

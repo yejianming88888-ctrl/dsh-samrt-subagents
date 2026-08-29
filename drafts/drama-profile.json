@@ -1,0 +1,74 @@
+{
+  "id": "drama-profile",
+  "name": "漫剧配置",
+  "purpose": "剧情、分镜、角色创作",
+  "settings": {
+    "foregroundTimeoutMs": 180000,
+    "idleTimeoutMs": 90000,
+    "maxConcurrentSubagents": 5,
+    "maxDepth": 2,
+    "enableBackground": true,
+    "showSelectionReason": true,
+    "customSkill": "",
+    "plannerAlias": "",
+    "subagentProvider": "spawn",
+    "models": [
+      {
+        "provider": "google-antigravity",
+        "model": "antigravity-gemini-3.7-flash",
+        "alias": "antigravity-gemini-3.7-flash",
+        "displayName": "Gemini 3.7 Flash",
+        "maxTokens": 8192,
+        "purpose": "剧本与分镜",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "reasoningEfforts": ["low", "medium", "high"],
+        "reasoningEffort": "low"
+      },
+      {
+        "provider": "google-antigravity",
+        "model": "antigravity-gemini-3.1-pro",
+        "alias": "antigravity-gemini-3.1-pro",
+        "displayName": "Gemini 3.1 Pro",
+        "maxTokens": 8192,
+        "purpose": "复杂剧情设计",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "reasoningEfforts": ["medium", "high"],
+        "reasoningEffort": "medium"
+      },
+      {
+        "provider": "google-antigravity",
+        "model": "antigravity-claude-sonnet-4-6-thinking",
+        "alias": "antigravity-claude-sonnet-4-6-thinking",
+        "displayName": "Claude Sonnet 4.6 Thinking",
+        "maxTokens": 4096,
+        "purpose": "角色深度对白",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "reasoningEfforts": ["high"],
+        "reasoningEffort": "high"
+      },
+      {
+        "provider": "openai-codex",
+        "model": "gpt-5.5",
+        "alias": "gpt-5.5",
+        "displayName": "GPT-5.5",
+        "maxTokens": 8192,
+        "purpose": "整体剧情审稿",
+        "tags": [],
+        "enabled": true,
+        "allowPlanning": true,
+        "allowExecution": true,
+        "reasoningEfforts": [],
+        "reasoningEffort": "low"
+      }
+    ]
+  }
+}
