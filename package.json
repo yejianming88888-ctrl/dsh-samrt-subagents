@@ -1,7 +1,7 @@
 {
-  "name": "dsh-smart-subagent-orchestrator",
+  "name": "dsh-samrt-subagents",
   "version": "0.1.0",
-  "description": "Model discovery, guided planning, and smart subagent orchestration for DeepSeek Harness",
+  "description": "Model discovery, guided planning, and smart subagent delegation for DeepSeek Harness",
   "type": "module",
   "main": "./lib/index.js",
   "exports": {

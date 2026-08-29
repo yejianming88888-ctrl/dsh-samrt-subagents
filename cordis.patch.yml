@@ -1,4 +1,4 @@
 # Mount the plugin; durable user choices live in the DSH Settings service.
 - insert:
-    - id: dsh-smart-subagent-orchestrator
-      name: dsh-smart-subagent-orchestrator
+    - id: dsh-samrt-subagents
+      name: dsh-samrt-subagents
