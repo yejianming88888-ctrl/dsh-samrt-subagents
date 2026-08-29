@@ -54,8 +54,7 @@ GPT-5.6 Luna (low, medium, high)
 
 - **Max Token**：单次输出上限；
 - **推理强度**：只能选择该模型实际支持的档位；
-- **用途备注**：说明该模型适合完成的开发任务；
-- **模型标签**：补充路由条件。
+- **用途备注**：说明该模型适合完成的开发任务。
 
 用途备注必须真实描述模型适合的工作，例如代码开发、架构设计、测试、文档或复杂推理。系统不会仅根据模型名称假设能力。
 
@@ -114,7 +113,7 @@ GPT-5.6 Luna (low, medium, high)
 | `enableBackground` | `true` | 是否允许后台可继续执行的子 Agent |
 | `showSelectionReason` | `true` | 是否显示模型选择理由 |
 
-每个模型还可以配置 `alias`、`provider`、`model`、`purpose`、`tags`、`enabled`、`allowPlanning`、`allowExecution` 和 `maxTokens`。
+系统内部会使用模型的 `alias`、`provider`、`model`、`purpose`、`enabled`、`allowPlanning`、`allowExecution` 和 `maxTokens` 配置；用户不需要填写模型标签。
 
 ## 重要限制
 
