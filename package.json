@@ -1,7 +1,25 @@
 {
-  "name": "dsh-samrt-subagents",
+  "name": "dsh-samrt-subagent",
   "version": "0.1.0",
-  "description": "Model discovery, guided planning, and smart subagent delegation for DeepSeek Harness",
+  "description": "Intelligent sub-agent orchestration for DeepSeek Harness, with model discovery, routing, planning, and parallel delegation.",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "subagent",
+    "orchestration",
+    "multi-agent"
+  ],
+  "homepage": "https://github.com/yejianming88888-ctrl/dsh-samrt-subagent#readme",
+  "bugs": {
+    "url": "https://github.com/yejianming88888-ctrl/dsh-samrt-subagent/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yejianming88888-ctrl/dsh-samrt-subagent.git"
+  },
+  "author": "yejianming88888-ctrl",
   "type": "module",
   "main": "./lib/index.js",
   "exports": {
@@ -25,9 +43,14 @@
     }
   },
   "scripts": {
-    "test": "node --check lib/index.js && node --check lib/client.js && node --test"
+    "test": "node --check lib/index.js && node --check lib/client.js && node --test",
+    "prepack": "pnpm test"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "peerDependencies": {
     "@deepseek-ai/dsh-scope": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"

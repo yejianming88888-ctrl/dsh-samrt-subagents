@@ -1,8 +1,16 @@
-# dsh-samrt-subagents
+# dsh-samrt-subagent
 
 一个用于 DeepSeek Harness 的智能子 Agent 委派插件：扫描 DSH 模型、配置模型用途、生成路由 Skill，并按单任务或依赖图委派子 Agent。
 
-项目名和仓库名统一为 `dsh-samrt-subagents`，其中 `samrt` 保留现有仓库拼写。
+> Intelligent sub-agent orchestration for DeepSeek Harness, with model discovery, routing, planning, and parallel delegation.
+
+## 安装
+
+```sh
+dsh plugin --profile web add dsh-samrt-subagent
+```
+
+安装后重启 `dsh web`，打开 **设置 → Smart Subagents**。
 
 ## 实际工作流程
 
@@ -122,7 +130,7 @@ GPT-5.6 Luna (low, medium, high)
 3. `idleTimeoutMs` 是无进展结算超时，不是精确的模型活动检测。
 4. 后台子 Agent 的生命周期依赖 DSH 的 `subagent/start` 和 `subagent/end` 事件。
 5. 插件负责配置、路由建议、计划和委派协议，不替代 DSH 的 Agent 执行能力。
-6. 配置命名空间和设置路由保留旧兼容标识，避免已有用户配置失效；项目显示名称和仓库名称已统一为 `dsh-samrt-subagents`。
+6. 配置命名空间、设置路由和浏览器本地存储键保留旧兼容标识，避免已有用户配置失效；公开包名、项目名称和 Client module ID 统一为 `dsh-samrt-subagent`。
 
 ## 开发和测试
 

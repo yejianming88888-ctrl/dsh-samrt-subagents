@@ -69,7 +69,7 @@ globalThis.window = { __ModuleLoader__: MockModuleLoader }
 const clientPath = new URL('../lib/client.js', import.meta.url)
 await import(clientPath.href)
 
-const plugin = MockModuleLoader.get('dsh-smart-subagent-orchestrator')
+const plugin = MockModuleLoader.get('dsh-samrt-subagent')
 assert.ok(plugin, 'client plugin should be registered in ModuleLoader')
 
 // The plugin stores exports on window.__ModuleLoader__ or through the factory
