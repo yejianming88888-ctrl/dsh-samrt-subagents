@@ -44,7 +44,7 @@
   },
   "scripts": {
     "test": "node --check lib/index.js && node --check lib/client.js && node --test",
-    "prepack": "pnpm test"
+    "prepack": "node --check lib/index.js && node --check lib/client.js && node --test"
   },
   "license": "MIT",
   "publishConfig": {
